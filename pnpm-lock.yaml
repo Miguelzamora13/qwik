@@ -53,7 +53,7 @@ importers:
       terser: 5.16.8
       tsm: 2.2.2
       typescript: 5.0.3
-      undici: 5.21.0
+      undici: 5.26.2
       uvu: 0.5.6
       vite: 4.2.1
       vite-tsconfig-paths: 4.0.8
@@ -110,7 +110,7 @@ importers:
       terser: 5.16.8
       tsm: 2.2.2
       typescript: 5.0.3
-      undici: 5.21.0
+      undici: 5.26.2
       uvu: 0.5.6
       vite: 4.2.1_mrs5dkoyeq2wfpy5pnapn2fbom
       vite-tsconfig-paths: 4.0.8_mqt6hr36lqfsnn3kcfure5ceka
@@ -153,7 +153,7 @@ importers:
       tailwindcss: 3.3.1
       tsm: 2.3.0
       typescript: 5.0.3
-      undici: 5.21.0
+      undici: 5.26.2
       uvu: 0.5.6
       vite: 4.2.1
       wrangler: ^2.14.0
@@ -165,7 +165,7 @@ importers:
       '@algolia/autocomplete-shared': 1.7.4
       '@algolia/client-search': 4.14.3
       '@builder.io/partytown': 0.7.6
-      '@builder.io/qwik': 0.100.0_undici@5.21.0
+      '@builder.io/qwik': 0.100.0_undici@5.26.2
       '@builder.io/qwik-city': 0.100.0_@builder.io+qwik@0.100.0
       '@builder.io/sdk-qwik': 0.1.16_@builder.io+qwik@0.100.0
       '@docsearch/css': 3.3.3
@@ -184,7 +184,7 @@ importers:
       tailwindcss: 3.3.1_postcss@8.4.21
       tsm: 2.3.0
       typescript: 5.0.3
-      undici: 5.21.0
+      undici: 5.26.2
       uvu: 0.5.6
       vite: 4.2.1
       wrangler: 2.14.0
@@ -512,7 +512,7 @@ packages:
     peerDependencies:
       '@builder.io/qwik': '>=0.22.0'
     dependencies:
-      '@builder.io/qwik': 0.100.0_undici@5.21.0
+      '@builder.io/qwik': 0.100.0_undici@5.26.2
       '@mdx-js/mdx': 2.3.0
       '@types/mdx': 2.0.3
       source-map: 0.7.4
@@ -522,14 +522,14 @@ packages:
       - supports-color
     dev: true
 
-  /@builder.io/qwik/0.100.0_undici@5.21.0:
+  /@builder.io/qwik/0.100.0_undici@5.26.2:
     resolution: {integrity: sha512-p2DAHZTkPFVN3fz3I6Ael6pLLdlzf89owPJVAIoQ9vt5jULnDJRf096qGc84Y+gaoqfoFWBYHYVnHOP0fnRjQg==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     hasBin: true
     peerDependencies:
       undici: ^5.14.0
     dependencies:
-      undici: 5.21.0
+      undici: 5.26.2
     dev: true
 
   /@builder.io/sdk-qwik/0.1.16_@builder.io+qwik@0.100.0:
@@ -537,7 +537,7 @@ packages:
     peerDependencies:
       '@builder.io/qwik': '>=0.13.3'
     dependencies:
-      '@builder.io/qwik': 0.100.0_undici@5.21.0
+      '@builder.io/qwik': 0.100.0_undici@5.26.2
     dev: true
 
   /@clack/core/0.3.2:
@@ -1321,6 +1321,11 @@ packages:
   /@eslint/js/8.37.0:
     resolution: {integrity: sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /@fastify/busboy/2.0.0:
+    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+    engines: {node: '>=14'}
     dev: true
 
   /@humanwhocodes/config-array/0.11.8:
@@ -7699,11 +7704,11 @@ packages:
       busboy: 1.6.0
     dev: true
 
-  /undici/5.21.0:
-    resolution: {integrity: sha512-HOjK8l6a57b2ZGXOcUsI5NLfoTrfmbOl90ixJDl0AEFG4wgHNDQxtZy15/ZQp7HhjkpaGlp/eneMgtsu1dIlUA==}
-    engines: {node: '>=12.18'}
+  /undici/5.26.2:
+    resolution: {integrity: sha512-a4PDLQgLTPHVzOK+x3F79/M4GtyYPl+aX9AAK7aQxpwxDwCqkeZCScy7Gk5kWT3JtdFq1uhO3uZJdLtHI4dK9A==}
+    engines: {node: '>=14.0'}
     dependencies:
-      busboy: 1.6.0
+      '@fastify/busboy': 2.0.0
     dev: true
 
   /unified/10.1.2:
